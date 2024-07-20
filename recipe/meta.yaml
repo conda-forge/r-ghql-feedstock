@@ -1,7 +1,6 @@
 {% set version = '0.1.0' %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-ghql
@@ -14,8 +13,7 @@ source:
   sha256: 7f19ab466fed3b081d8a02b8bc517194051991372600c833e79c4391517a5ca5
 
 build:
-  merge_build_host: True  # [win]
-  number: 3
+  number: 4
 
   rpaths:
     - lib/R/lib/
